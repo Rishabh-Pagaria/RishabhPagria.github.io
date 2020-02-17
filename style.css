@@ -1,0 +1,77 @@
+*{
+    color: #221C22;
+    box-sizing: border-box;
+
+}
+body,html{
+    margin: 0;
+    height: 100%;
+}
+.portfolio{
+   height: 100%;
+   background-image: url("Images/portfolio3.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.name{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    text-align: center;
+    color: #fff;
+    transform: translate( -50%, -50% );
+}
+h1{
+    font-size: 8vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 5px 5px black;
+}
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+}
+.about,.about-me,.interest-head,.gallery-text{
+    margin: 2vh;
+    margin-top: 0;
+    text-align: justify;
+    color: #221C22;
+    font-size: 4vh;
+    
+}
+.about-me{
+    line-height: 30px;
+    padding: 15px;
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-shadow: 2px 0px 0px #221C22;
+}
+.interest{
+    display: table;
+    clear: both;
+}
+.sizing{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.Responsive{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery{
+    width:25%;
+    flex: 25%;
+    padding: 0 4px;
+}
+.gallery img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    
+}

@@ -1,5 +1,4 @@
 *{
-    color: #221C22;
     box-sizing: border-box;
 
 }
@@ -15,10 +14,10 @@ body,html{
 }
 .name{
     position: absolute;
+    color: #221C22;
     top: 20%;
     left: 70%;
     text-align: center;
-    color: #fff;
     transform: translate( -50%, -50% );
 }
 h1{
@@ -74,4 +73,53 @@ h4{
     vertical-align: middle;
     width: 100%;
     
+}
+
+@media only screen and (max-width: 800px){
+    .gallery{
+        flex: 50%;
+        width: 50%;
+    }
+    .column{
+        float: none;
+        width: 100%;
+    }
+    .sizing{
+        font-size: 3vh;
+    }
+    .name{
+        color: cornsilk;
+        transform: translate(-104%,60%);
+        margin: -20px;
+    }
+    h1{
+        text-shadow: 4px 2px 2px rgb(241, 173, 94);
+    }
+    h4{
+        text-shadow: 2px 1px 1px rgb(241, 173, 94);
+    }
+}
+@media only screen and (max-width: 600px){
+    .gallery{
+        flex-direction: column;
+        width: 100%;
+    }
+    .column{
+        float: none;
+        width: 100%;
+    }
+    .sizing{
+        font-size: 4vh;
+    }
+    .name{
+        color: cornsilk;
+        transform: translate(-104%,60%);
+        margin: -20px;
+    }
+    h1{
+        text-shadow: 4px 2px 2px rgb(241, 173, 94);
+    }
+    h4{
+        text-shadow: 2px 1px 1px rgb(241, 173, 94);
+    }
 }

@@ -84,9 +84,6 @@ h4{
         float: none;
         width: 100%;
     }
-    .sizing{
-        font-size: 3vh;
-    }
     .name{
         color: cornsilk;
         transform: translate(-104%,60%);
@@ -107,9 +104,6 @@ h4{
     .column{
         float: none;
         width: 100%;
-    }
-    .sizing{
-        font-size: 4vh;
     }
     .name{
         color: cornsilk;

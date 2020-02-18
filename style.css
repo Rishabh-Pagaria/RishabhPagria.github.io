@@ -11,6 +11,8 @@ body,html{
    background-image: url("Images/portfolio3.jpg");
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
 }
 .name{
     position: absolute;
@@ -19,6 +21,7 @@ body,html{
     left: 70%;
     text-align: center;
     transform: translate( -50%, -50% );
+    
 }
 h1{
     font-size: 8vh;
@@ -43,8 +46,6 @@ h4{
     font-size: 2vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 .column{
     float: left;
     width: 33.33%;
@@ -74,7 +75,16 @@ h4{
     width: 100%;
     
 }
+.details{
+    background-color: rgba(60, 128, 192, 0.904);
+    height: 50%;
+    margin: 4px 4px;
+    
+}
 
+
+
+/* for screens 800px or less than */
 @media only screen and (max-width: 800px){
     .gallery{
         flex: 50%;
@@ -101,6 +111,9 @@ h4{
         position: relative;
     }
 }
+
+
+/* for screens 600px or less than */
 @media only screen and (max-width: 600px){
     .gallery{
         flex-direction: column;

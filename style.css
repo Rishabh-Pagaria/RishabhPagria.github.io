@@ -76,13 +76,39 @@ h4{
     
 }
 .details{
-    background-color: rgba(60, 128, 192, 0.904);
+    background-color: rgba(24, 26, 27, 0.904);
     height: 50%;
     margin: 4px 4px;
+    position: absolute;
+    width: 100%;
+    
+}
+.fas{
+    color: darkkhaki;
+    position: relative;
+    font-size: 5vh;
+    left: 50%; 
+    animation-name: swipe-up;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.fab{
+    font-size: 7vh;
+    margin: 20px;
+    position: relative;
+    top: 150px;
+    left: 41%;
     
 }
 
-
+/* animationg the icon */
+@keyframes swipe-up{
+    0% {bottom: 10px;top: 50px;}
+    25% {bottom: 20px;top: 40px;}
+    50% {bottom: 30px;top: 30px;}
+    75% {bottom: 40px;top: 20px;}
+    100% {bottom: 50px;top: 10px;}
+}
 
 /* for screens 800px or less than */
 @media only screen and (max-width: 800px){
@@ -133,5 +159,9 @@ h4{
     }
     h4{
         text-shadow: 2px 1px 1px rgb(241, 173, 94);
+    }
+    .fab{
+        top:50px;
+        left: 25%;
     }
 }

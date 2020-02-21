@@ -98,8 +98,29 @@ h4{
     position: relative;
     top: 150px;
     left: 41%;
+    opacity: 0.5;
     
 }
+.lnk{
+    color: whitesmoke;
+}
+
+
+.hov1:hover{
+  color: #3b5998 ;
+  
+}
+.hov2:hover{
+    background-image: linear-gradient(#405DE6,rgb(193,53,132),rgb(225,48,108),rgb(253,29,29));
+    border-radius: 50px;
+}
+.hov3:hover{
+    color:#0e76a8;
+}
+.hov4:hover{
+    opacity: 1;
+}
+
 
 /* animationg the icon */
 @keyframes swipe-up{
@@ -111,10 +132,11 @@ h4{
 }
 
 /* for screens 800px or less than */
-@media only screen and (max-width: 800px){
+@media only screen and (min-width:400px) and (max-width: 700px) and (orientation: portrait){
     .gallery{
         flex: 50%;
         width: 50%;
+        
     }
     .column{
         float: none;
@@ -134,6 +156,13 @@ h4{
         text-shadow: 2px 1px 1px rgb(241, 173, 94);
     }
     .portfolio{
+        position: relative;
+    }
+    .column{
+        box-shadow: 0px 0px 0px;
+    }
+    .fab{
+        top: 200px;
         position: relative;
     }
 }
